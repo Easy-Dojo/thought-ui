@@ -491,16 +491,6 @@ progress {
   vertical-align: baseline;
 }
 
-
-// Fix height of inputs with a type of datetime-local, date, month, week, or time
-// See https://github.com/twbs/bootstrap/issues/18842
-
-::-webkit-datetime-edit {
-  overflow: visible;
-  line-height: 0;
-}
-
-
 // 1. Correct the outline style in Safari.
 // 2. This overrides the extra rounded corners on search inputs in iOS so that our
 //    `.form-control` class can properly style them. Note that this cannot simply

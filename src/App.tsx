@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello H1</h1>
+        <h2>Hello H2</h2>
+        <h3>Hello H3</h3>
+        <h4>Hello H4</h4>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <hr/>
         <a
           className="App-link"
           href="https://reactjs.org"

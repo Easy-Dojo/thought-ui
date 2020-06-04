@@ -17,13 +17,13 @@ function App() {
             <hr/>
 
             <Menu mode="vertical" defaultIndex={0}>
-                <MenuItem index={0}>
+                <MenuItem>
                     menu 1
                 </MenuItem>
-                <MenuItem  index={1} disabled>
+                <MenuItem disabled>
                     menu 2
                 </MenuItem>
-                <MenuItem  index={2}>
+                <MenuItem>
                     menu 3
                 </MenuItem>
             </Menu>

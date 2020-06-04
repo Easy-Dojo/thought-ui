@@ -1,6 +1,6 @@
 import React from 'react'
 import {fireEvent, render} from '@testing-library/react'
-import Button, {ButtonProps, ButtonSiz, ButtonType} from './button'
+import Button, {ButtonProps} from './button'
 
 const BUTTON_TAG_NAME = 'BUTTON'
 const A_TAG_NAME = 'A';
@@ -30,8 +30,8 @@ describe('test button component', ()=>{
 
   it('should render the correct HTML tag with correct className when render Button given btnType is Primary, size is Large, additional class is klass', ()=>{
     const testProps: ButtonProps = {
-      btnType: ButtonType.Primary,
-      size: ButtonSiz.Large,
+      btnType: 'primary',
+      size: 'lg',
       className: 'klass'
     }
     const wrapper = render(<Button {...testProps}>TestBtn</Button>)
@@ -56,7 +56,7 @@ describe('test button component', ()=>{
 
   it('should render a link when render Button given btnType is link and href is provided', ()=>{
     const linkProps: ButtonProps = {
-      btnType: ButtonType.Link,
+      btnType: 'link',
       href: "#"
     }
     const wrapper = render(<Button {...linkProps}>TestBtn</Button>)
@@ -69,7 +69,7 @@ describe('test button component', ()=>{
 
   it('should render a disabled link when render Button given btnType is link and href is provided and disabled attribute true', ()=>{
     const linkProps: ButtonProps = {
-      btnType: ButtonType.Link,
+      btnType: 'link',
       disable: true,
       href: "#",
     }

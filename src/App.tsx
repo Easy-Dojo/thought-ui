@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './components/Button/button';
 import Menu from './components/Menu/menu';
-import MenuItem from "./components/Button/menuItem";
+import MenuItem from "./components/Menu/menuItem";
 
 function App() {
     return (

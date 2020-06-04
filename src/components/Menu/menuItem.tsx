@@ -33,4 +33,5 @@ const MenuItem: FC<MenuItemProps> = (props) => {
 
 MenuItem.defaultProps = {}
 
+MenuItem.displayName="MenuItem"
 export default MenuItem

@@ -16,7 +16,7 @@ function App() {
             <Button btnType='link' size='sm' disable>Small Danger Link</Button>
             <hr/>
 
-            <Menu defaultIndex={0}>
+            <Menu mode="vertical" defaultIndex={0}>
                 <MenuItem index={0}>
                     menu 1
                 </MenuItem>

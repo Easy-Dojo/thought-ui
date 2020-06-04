@@ -16,14 +16,14 @@ function App() {
             <Button btnType={ButtonType.Link} size={ButtonSiz.Small} disable>Small Danger Link</Button>
             <hr/>
 
-            <Menu>
-                <MenuItem>
+            <Menu defaultIndex={0}>
+                <MenuItem index={0}>
                     menu 1
                 </MenuItem>
-                <MenuItem>
+                <MenuItem  index={1} disabled>
                     menu 2
                 </MenuItem>
-                <MenuItem>
+                <MenuItem  index={2}>
                     menu 3
                 </MenuItem>
             </Menu>

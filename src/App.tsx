@@ -17,7 +17,7 @@ function App() {
             <Button btnType='link' size='sm' disable>Small Danger Link</Button>
             <hr/>
 
-            <Menu mode="vertical" defaultIndex="0">
+            <Menu mode="vertical" onSelect={(index)=>{alert(index)}} defaultOpenSubMenus={["2"]} defaultIndex="0">
                 <MenuItem>
                     menu 1
                 </MenuItem>

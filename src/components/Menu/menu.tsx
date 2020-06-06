@@ -11,18 +11,20 @@ export interface MenuProps {
     mode?: MenuMode;
     style?: React.CSSProperties;
     onSelect?: SelectCallback;
+    defaultOpenSubMenus?: string[];
 }
 
 interface IMenuContext {
     index: string;
     mode?: MenuMode;
     onSelect?: SelectCallback;
+    defaultOpenSubMenus?: string[];
 }
 
 export const MenuContext = createContext<IMenuContext>({index: '0'})
 
 const Menu: FC<MenuProps> = (props) => {
-    const {defaultIndex, className, mode, style, children, onSelect} = props
+    const {defaultIndex, className, mode, style, children, onSelect, defaultOpenSubMenus} = props
     const [currentActive, setActive] = useState(defaultIndex)
 
     const classes = classNames('tui-menu', className, {
@@ -39,7 +41,8 @@ const Menu: FC<MenuProps> = (props) => {
 
     const passedContext: IMenuContext = {
         index: currentActive ? currentActive : '0',
-        mode: mode,
+        mode,
+        defaultOpenSubMenus,
         onSelect: handleClick
     }
 
@@ -65,6 +68,7 @@ const Menu: FC<MenuProps> = (props) => {
 Menu.defaultProps = {
     defaultIndex: '0',
     mode: 'horizontal',
+    defaultOpenSubMenus: []
 }
 
 export default Menu

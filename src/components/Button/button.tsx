@@ -1,4 +1,4 @@
-import React from "react";
+import React, {AnchorHTMLAttributes, ButtonHTMLAttributes, FC} from "react";
 import classNames from 'classnames'
 
 type ButtonSiz = 'lg' | 'sm'
@@ -6,18 +6,21 @@ type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 
 interface BaseButtonProps {
     className?: string;
+    /** Setting Button's disable*/
     disable?: boolean;
     href?: string;
+    /** Setting Button's size*/
     size?: ButtonSiz;
+    /** Setting Button's type*/
     btnType?: ButtonType;
     children: React.ReactNode;
 }
 
-type NativeButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLElement>
-type AnchorButtonProps = BaseButtonProps & React.AnchorHTMLAttributes<HTMLElement>
+type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
+type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-const Button: React.FC<ButtonProps> = (props) => {
+export const Button: FC<ButtonProps> = (props) => {
     const {
         btnType,
         className,

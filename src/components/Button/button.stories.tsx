@@ -1,6 +1,7 @@
 import {action} from "@storybook/addon-actions";
 import React from "react";
 import Button from "./button";
+import {withInfo} from "@storybook/addon-info";
 
 const styles: React.CSSProperties = {
     textAlign: "center"
@@ -10,7 +11,7 @@ const CenterDecorator = (storyFn: any) => <div style={styles}>{storyFn()}</div>
 export default {
     title: 'Button',
     component: Button,
-    decorators: [CenterDecorator],
+    decorators: [CenterDecorator, withInfo],
 };
 
 export const DefaultButton = () =>

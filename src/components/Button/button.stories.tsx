@@ -1,37 +1,31 @@
 import {action} from "@storybook/addon-actions";
 import React from "react";
 import Button from "./button";
-import {withInfo} from "@storybook/addon-info";
-
-const styles: React.CSSProperties = {
-    textAlign: "center"
-}
-const CenterDecorator = (storyFn: any) => <div style={styles}>{storyFn()}</div>
 
 export default {
     title: 'Button',
     component: Button,
-    decorators: [CenterDecorator, withInfo],
 };
 
 export const DefaultButton = () =>
     <Button onClick={action('clicked')}>Default Button</Button>;
 
-DefaultButton.story = {
-    name: '默认按钮',
-};
-
 export const buttonWithDifferentSize = () =>
     <>
-        <Button size="lg">Large Button</Button>
-        <Button>Default Button</Button>
         <Button size="sm">Small Button</Button>
+        <br/><br/>
+        <Button>Default Button</Button>
+        <br/><br/>
+        <Button size="lg">Large Button</Button>
     </>
 
 export const buttonWithDifferentType = () =>
     <>
         <Button btnType="primary">Primary Button</Button>
+        <br/><br/>
         <Button btnType="default">Default Button</Button>
+        <br/><br/>
         <Button btnType="danger">Danger Button</Button>
+        <br/><br/>
         <Button btnType="link" href="https://www.baidu.com" target="_blank">Link Button</Button>
     </>

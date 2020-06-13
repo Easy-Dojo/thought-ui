@@ -20,6 +20,15 @@ type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
 type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
+/**
+ *
+ The most commonly used button elements on the page, suitable for completing specific interactions
+ * ### Reference method
+ *
+ * ~~~js
+ * import { Button } from 'thought-ui'
+ * ~~~
+ */
 export const Button: FC<ButtonProps> = (props) => {
     const {
         btnType,

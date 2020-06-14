@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  gh-pages: sugarshin/gh-pages@0.0.6
 jobs:
   build-and-test:
     executor:
@@ -11,7 +12,22 @@ jobs:
           steps:
             - run: yarn install
             - run: yarn run test:nowatch
+  deploy-sb-ghpages:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn run build-storybook
+      - gh-pages/deploy:
+          build-dir: storybook-static
+          ssh-fingerprints: 'ac:bd:f0:f1:bc:a0:0d:b9:7e:5e:84:91:a9:92:bf:74'
+
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-and-test
+      - deploy-sb-ghpages:
+          requires:
+            - build-and-test

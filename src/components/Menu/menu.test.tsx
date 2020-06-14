@@ -140,7 +140,7 @@ describe('test Menu & MenuItem component', () => {
         const dropdownElement = wrapper.getByText("dropdown")
 
         fireEvent.click(dropdownElement)
-        expect(wrapper.queryByText('drop1')).toBeVisible()
+        expect(wrapper.queryByText('drop1')).not.toBeVisible()
 
         fireEvent.click(dropdownElement)
         expect(wrapper.queryByText('drop1')).toBeVisible()

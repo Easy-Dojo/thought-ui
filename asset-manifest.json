@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Easy-Dojo/thought-ui.git/static/css/main.3b2f0b96.chunk.css",
-    "main.js": "/Easy-Dojo/thought-ui.git/main.d0587d2fd5a25a1b96b3.bundle.js",
-    "main.css.map": "/Easy-Dojo/thought-ui.git/static/css/main.3b2f0b96.chunk.css.map",
-    "main.js.map": "/Easy-Dojo/thought-ui.git/main.d0587d2fd5a25a1b96b3.bundle.js.map",
-    "runtime~main.js": "/Easy-Dojo/thought-ui.git/runtime~main.d0587d2fd5a25a1b96b3.bundle.js",
-    "runtime~main.js.map": "/Easy-Dojo/thought-ui.git/runtime~main.d0587d2fd5a25a1b96b3.bundle.js.map",
+    "main.css": "/Easy-Dojo/thought-ui.git/static/css/main.bd89d5f9.chunk.css",
+    "main.js": "/Easy-Dojo/thought-ui.git/main.5212caae8973834276b8.bundle.js",
+    "main.css.map": "/Easy-Dojo/thought-ui.git/static/css/main.bd89d5f9.chunk.css.map",
+    "main.js.map": "/Easy-Dojo/thought-ui.git/main.5212caae8973834276b8.bundle.js.map",
+    "runtime~main.js": "/Easy-Dojo/thought-ui.git/runtime~main.5212caae8973834276b8.bundle.js",
+    "runtime~main.js.map": "/Easy-Dojo/thought-ui.git/runtime~main.5212caae8973834276b8.bundle.js.map",
     "vendors~main.css": "/Easy-Dojo/thought-ui.git/static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.js": "/Easy-Dojo/thought-ui.git/vendors~main.d0587d2fd5a25a1b96b3.bundle.js",
+    "vendors~main.js": "/Easy-Dojo/thought-ui.git/vendors~main.5212caae8973834276b8.bundle.js",
     "vendors~main.css.map": "/Easy-Dojo/thought-ui.git/static/css/vendors~main.f8f248a5.chunk.css.map",
-    "vendors~main.js.map": "/Easy-Dojo/thought-ui.git/vendors~main.d0587d2fd5a25a1b96b3.bundle.js.map",
+    "vendors~main.js.map": "/Easy-Dojo/thought-ui.git/vendors~main.5212caae8973834276b8.bundle.js.map",
     "iframe.html": "/Easy-Dojo/thought-ui.git/iframe.html",
-    "precache-manifest.ee3924ac4463a368149236db97c7c3b2.js": "/Easy-Dojo/thought-ui.git/precache-manifest.ee3924ac4463a368149236db97c7c3b2.js",
+    "precache-manifest.bd3dc759012693c5d92d5f32d046ad15.js": "/Easy-Dojo/thought-ui.git/precache-manifest.bd3dc759012693c5d92d5f32d046ad15.js",
     "service-worker.js": "/Easy-Dojo/thought-ui.git/service-worker.js",
-    "vendors~main.d0587d2fd5a25a1b96b3.bundle.js.LICENSE.txt": "/Easy-Dojo/thought-ui.git/vendors~main.d0587d2fd5a25a1b96b3.bundle.js.LICENSE.txt"
+    "vendors~main.5212caae8973834276b8.bundle.js.LICENSE.txt": "/Easy-Dojo/thought-ui.git/vendors~main.5212caae8973834276b8.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.d0587d2fd5a25a1b96b3.bundle.js",
+    "runtime~main.5212caae8973834276b8.bundle.js",
     "static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.d0587d2fd5a25a1b96b3.bundle.js",
-    "static/css/main.3b2f0b96.chunk.css",
-    "main.d0587d2fd5a25a1b96b3.bundle.js"
+    "vendors~main.5212caae8973834276b8.bundle.js",
+    "static/css/main.bd89d5f9.chunk.css",
+    "main.5212caae8973834276b8.bundle.js"
   ]
 }
